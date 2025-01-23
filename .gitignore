@@ -1,0 +1,19 @@
+node_modules/
+build/
+
+.DS_Store
+
+# ENVIRONMENT VARIABLES
+.env*
+
+# STORYBOOK Artifacts
+.cache/
+*storybook.log
+storybook-static
+
+dist
+
+
+#
+# END CUSTOM ignore
+#
