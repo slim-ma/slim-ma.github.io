@@ -8,3 +8,6 @@
 - add color substitution
 
 ### Later
+
+## Icon Changelog:
+- `0-moodys-logo` => `monogram`
