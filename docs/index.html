@@ -1,40 +1,19 @@
 <!DOCTYPE html>
 <head>
-  <script>
-    const cache = {};
-    async function fetchIcon(name) {
-      if (!name) return '';
-      if (cache[name]) return cache[name];
-
-      const res = await fetch(`https://slim-ma.github.io/svg/${name}.svg`, {
-        method: 'GET',
-        mode: 'cors',
-      });
-      cache[name] = await res.text();
-      return cache[name];
-      console.log(cache[name]);
-    }
-
-    class Icon extends HTMLElement {
-      static observedAttributes = ["name"];
-      constructor() {
-        super();
-      }
-      async connectedCallback() {
-        const name = this.getAttribute('name');
-        console.log(name);
-        const markup = await fetchIcon(name);
-        this.innerHTML = markup;
-      }
-    }
-
-    customElements.define('m-icon', Icon);
-  </script>
+  <script src="./m-icon.js" async fetchpriority="high" type="module"></script>
+  <style>body { background-color: silver; }</style>
 </head>
 <body>
-  Hi
-  <m-icon name="waves"></m-icon>
+  Color test:<br/>
+  <span style="color: goldenrod">
+    <m-icon name="waves"></m-icon>
+    <m-icon name="monogram"></m-icon><br/>
+  </span>
   <br/>
-  <m-icon name="monogram"></m-icon>
+  <hr/>
+  <m-icon name="bean-off"></m-icon>
+  <m-icon name="waves"></m-icon>
+  <m-icon name="waves"></m-icon>
+
 </body>
 </html>

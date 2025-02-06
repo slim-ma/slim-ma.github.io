@@ -1,13 +1,17 @@
 # Road map
 
-## Now
-- clean up and prepare scripts for distribution
+## Done
+- ✅ clean up scripts
+     - use localStorage caching
 
-## Next
+## Now
 - add width adjustment feature
 - add color substitution
-
-### Later
+- dev-mode: no caching
+### Publish
+- Finalize icon names
+- use CDN address for file stings 
 
 ## Icon Changelog:
+- `2025-01-25`: collect svg from figma
 - `0-moodys-logo` => `monogram`
