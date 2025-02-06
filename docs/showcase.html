@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon showcase</title>
+  <script src="listing.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      for (let i = 0; i < iconNames.length; i++) {
+        const icon = document.createElement('m-icon');
+        icon.setAttribute('name', iconNames[i]);
+        document.body.appendChild(icon);
+      }
+    });
+  </script>
+  <script src="./m-icon.js" async fetchpriority="high" type="module"></script>
+
+</head>
+<body style="color:lightslategray">
+</body>
+</html>

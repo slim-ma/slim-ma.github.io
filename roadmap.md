@@ -12,6 +12,11 @@
 - Finalize icon names
 - use CDN address for file stings 
 
+***
+
+## TODO:
+- `flag` needs outline conversion
+
 ## Icon Changelog:
 - `2025-01-25`: collect svg from figma
 - `0-moodys-logo` => `monogram`
