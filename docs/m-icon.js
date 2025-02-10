@@ -2,14 +2,13 @@
 async function fetchIcon(name) {
   if (!name) return '';
   const key = `mIcon-${name}`;
-  // const cachedValue = localStorage.getItem(key);
-  // if (cachedValue !== null) return cachedValue;
+  const cachedValue = localStorage.getItem(key);
+  if (cachedValue !== null) return cachedValue;
 
   const res = await fetch(`./svg/${name}.svg`);
   const string = await res.text();
-  // localStorage.setItem(key, string);
-  // return localStorage.getItem(key);
-  return string;
+  localStorage.setItem(key, string);
+  return localStorage.getItem(key);
 }
 
 class Icon extends HTMLElement {

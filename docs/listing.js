@@ -1,5 +1,5 @@
 const iconNames = [
-  "1-accessibility",
+  "a11y",
   "a-arrow-down",
   "a-arrow-up",
   "a-large-small",
@@ -896,7 +896,6 @@ const iconNames = [
   "monitor-up",
   "monitor-x",
   "monitor",
-  "monogram",
   "moon-star",
   "moon",
   "more-horizontal",
@@ -1437,4 +1436,27 @@ const iconNames = [
   "zap",
   "zoom-in",
   "zoom-out",
+];
+
+const animals = [
+  "bird",
+  "bone",
+  "bug",
+  "bug-off",
+  "bug-play",
+  "cat",
+  "dog",
+  "egg",
+  "fish",
+  "fish-off",
+  "fish-symbol",
+  "origami",
+  "paw-print",
+  "rabbit",
+  "rat",
+  "shell",
+  "snail",
+  "squirrel",
+  "turtle",
+  "worm",
 ];

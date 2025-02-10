@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <head>
-  <script src="./m-icon.js" async fetchpriority="high" type="module"></script>
+  <script src="./m-icon-dev.js" async fetchpriority="high" type="module"></script>
   <style>body { background-color: silver; }</style>
   <link rel="stylesheet" href="./reset.css">
+  <style>
+    .icon-listing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      background-color: white;
+      padding: 8px;
+      icon-display {
+        height: 40px;
+        width: 40px;
+        background: silver;
+        color: black;
+        padding: 8px;
+        border-radius: 4px;
+      }
+    }
+    </style>
 </head>
 <body>
   <p><a href="./showcase.html">show all icons</a></p>
   Color test:<br/>
   <span style="color: black">
     <m-icon name="bean" width="100" height="100" width="100"></m-icon>
-    <m-icon name="monogram"></m-icon><br/>
+    <m-icon name="flag" width="20"></m-icon><br/>
   </span>
   <br/>
   <hr/>
-  <m-icon name="bean-off"></m-icon>
-  <m-icon name="waves"></m-icon>
-  <m-icon name="waves"></m-icon>
+  <div class="icon-listing">
+    <icon-display name="bean-off"></icon-display>
+    <m-icon name="waves"></m-icon>
+    <m-icon name="waves"></m-icon>
+  </div>
 
 </body>
 </html>
