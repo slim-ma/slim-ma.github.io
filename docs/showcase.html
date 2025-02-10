@@ -7,15 +7,36 @@
   <script src="listing.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const isFirefox = typeof InstallTrigger !== "undefined";
+      if (!isFirefox) {
+        const p = document.createElement('p');
+        p.textContent = 'View in FireFox for full set';
+        document.body.appendChild(p);
+      }
+      // loop through icons
       for (let i = 0; i < iconNames.length; i++) {
         const icon = document.createElement('m-icon');
         icon.setAttribute('name', iconNames[i]);
         document.body.appendChild(icon);
       }
+
     });
   </script>
   <script src="./m-icon.js" async fetchpriority="high" type="module"></script>
-
+  <style>
+  body {
+    background-color: silver;
+    margin: 0;
+    height: 100%;
+  }
+  p {
+    color: black;
+    background-color: white;
+    margin: 0 0 16px;
+    padding: 0.5em;
+  }
+  </style>
+  <link rel="stylesheet" href="./reset.css">
 </head>
 <body style="color:lightslategray">
 </body>

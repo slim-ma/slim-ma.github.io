@@ -3,19 +3,20 @@
 ## Done
 - ✅ clean up scripts
      - use localStorage caching
+- ✅ add color substitution
 
 ## Now
 - add width adjustment feature
-- add color substitution
 - dev-mode: no caching
+- add type def
+- `flag` needs outline conversion
+
 ### Publish
-- Finalize icon names
-- use CDN address for file stings 
+- Audit & finalize icon names
+- Use CDN
+  - use CDN address for file stings
 
 ***
-
-## TODO:
-- `flag` needs outline conversion
 
 ## Icon Changelog:
 - `2025-01-25`: collect svg from figma
